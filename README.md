@@ -168,6 +168,9 @@ The process to reproduce the tables in the paper is straightforward. Follow the 
 
 ## Runtime Summary for the Tables
 
+The runtime for **Table 1** is approximately **? hours**.
+
+
 ### Tables 2
 
 Method | Runtime
@@ -187,7 +190,7 @@ P_Binning | ?
 
 ### Total Runtime
 
-The total runtime for reproducing **Tables 2** is approximately **? hours**, and the runtime for **Table 1** is approximately **? hours**.
+The total runtime for reproducing **Tables 2** is approximately **? hours**.
 
 If you only want to run a subset of the methods, you can comment out the corresponding method blocks in the files:
 
