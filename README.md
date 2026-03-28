@@ -175,11 +175,9 @@ Method | Runtime
 TF_thinned_SV | ?
 TF_thinned_twinGP | ?
 TF_ANN | ?
-
 G_SVR | ?
 G_XGBoost | ?
 G_random_forest | ?
-
 P_GNN | ?
 P_XGBoost | ?
 P_twinGP | ?
