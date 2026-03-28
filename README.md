@@ -35,28 +35,28 @@ These terrain features are used in the second stage of matching in the terrain-a
 
 The implementation of the proposed method and the benchmark methods is written in **R** and **Python**. Three categories of methods are implemented:
 
--Transfer learning methods
--Geographic-neighbor transfer methods
--Pooled data modeling methods
+- Transfer learning methods
+- Geographic-neighbor transfer methods
+- Pooled data modeling methods
 
 Our transfer learning approach selects source data based on a supervised weighted Kolmogorov–Smirnov metric. Geographic matching selects turbines that are geographically closest to the target turbine, while the pooled strategy uses data from all training turbines.
 
 Transfer learning:
--thinnedSV (R)
--Multi-layer NN (Python)
--thinned twinGP (R)
+- thinnedSV (R)
+- Multi-layer NN (Python)
+- thinned twinGP (R)
 
 Geographic-neighbor transfer:
--Random Forest (Python)
--XGBoost (Python)
--SVR (R)
+- Random Forest (Python)
+- XGBoost (Python)
+- SVR (R)
 
 Pooled training:
--XGBoost (Python)
--Graph NN (Python)
--BHM (R)
--twinGP (R)
--Binning (R)
+- XGBoost (Python)
+- Graph NN (Python)
+- BHM (R)
+- twinGP (R)
+- Binning (R)
 
 
 ### Note on BHM Implementation
@@ -73,15 +73,15 @@ In addition, the BHM method is significantly slower than the other methods consi
 
 Each method is labeled with one of the prefixes (TF, G, P):
 
--TF: Transfer learning
--G: Geographic-based methods
--P: Pooled methods
+- TF: Transfer learning
+- G: Geographic-based methods
+- P: Pooled methods
 
 For example:
 
--P_binning: Binning applied to pooled data
--G_SVR: SVR applied to geographically closest turbines
--TF_thinned_SV: thinned SV applied within the transfer learning framework
+- P_binning: Binning applied to pooled data
+- G_SVR: SVR applied to geographically closest turbines
+- TF_thinned_SV: thinned SV applied within the transfer learning framework
 
 The repository is organized as follows:
 
