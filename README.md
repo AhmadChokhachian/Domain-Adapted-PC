@@ -169,7 +169,7 @@ The process to reproduce the tables in the paper is straightforward. Follow the 
 
 ## Runtime Summary for the Tables
 
-The runtime for **Table 1** is approximately **? hours**.
+Matching (optional) takes 40 minutes. The runtime for **Table 1** is approximately **? hours**.
 
 
 ### Tables 2
