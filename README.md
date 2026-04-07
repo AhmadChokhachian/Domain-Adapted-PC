@@ -47,7 +47,7 @@ Transfer learning:
 - thinned twinGP (R)
 
 Geographic-neighbor transfer:
-- Random Forest (Python)
+- Random Forest (R)
 - XGBoost (Python)
 - SVR (R)
 
@@ -95,35 +95,47 @@ STGP-Terrain-Aware-Power-Curve/
 │   ├── turbine_locations.csv
 │   └── processed_data
 │
-├── run_matching.bat
+├── run_all_loto.bat
 │
-├── run_table1.bat
+├── run_all_dfp.bat
 │
-├── run_table2_TL.bat
+├── compile_results.py
 │
-├── run_table2_Geographic.bat
-│
-├── run_table2_pooled.bat
 │
 ├── code/
-│   ├──update_final_results.R
-│   ├──update_final_results.ipynb
 │
-│   ├── matching.ipynb
+│   ├── matching.py
 │   ├── Table1.R
+│   ├── thinnedsv_source.R
 │
-│   ├── Table2(TF_thinned_SV).R
-│   ├── Table2(TF_thinned_twinGP).R
-│   ├── Table2(TF_ANN).ipynb
+│   ├── Table2_TF_thinned_SV.R
+│   ├── Table2_TF_thinned_twinGP.R
+│   ├── Table2_TF_ANN.py
 │
-│   ├── Table2(G_SVR).R
-│   ├── Table2(G_XGBoost).ipynb
-│   ├── Table2(G_random_forest).ipynb
+│   ├── Table2_G_SVR.R
+│   ├── Table2_G_XGBoost.py
+│   ├── Table2_G_random_forest.R
 │
-│   ├── Table2(P_GNN).ipynb
-│   ├── Table2(P_XGBoost).ipynb
-│   ├── Table2(P_twinGP).R
-│   └── Table2(P_Binning).R
+│   ├── Table2_P_GNN.py
+│   ├── Table2_P_XGBoost.py
+│   ├── Table2_P_twinGP.R
+│   ├── Table2_P_Binning.R
+│
+│   ├── matching_dfp.py
+│   ├── Table1_dfp.R
+│
+│   ├── Table2_TF_thinned_SV_dfp.R
+│   ├── Table2_TF_thinned_twinGP_dfp.R
+│   ├── Table2_TF_ANN_dfp.py
+│
+│   ├── Table2_G_SVR_dfp.R
+│   ├── Table2_G_XGBoost_dfp.py
+│   ├── Table2_G_random_forest_dfp.R
+│
+│   ├── Table2_P_GNN_dfp.py
+│   ├── Table2_P_XGBoost_dfp.py
+│   ├── Table2_P_twinGP_dfp.R
+│   └── Table2_P_Binning_dfp.R
 │
 ├── results/
 │   ├── final_results.csv
