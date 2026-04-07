@@ -146,7 +146,7 @@ STGP-Terrain-Aware-Power-Curve/
 ```
 
 **data/**  
-Contains turbine SCADA datasets, terrain features, turbine location data, and processed datasets. The processed data includes turbine selection based on different matching metrics. Users can either run run_matching.bat to generate these files or use the precomputed data provided in the repository.
+Contains turbine SCADA datasets, terrain features, turbine location data, and processed datasets. The processed data includes turbine selection based on different matching metrics. 
  
 **data/processed_data/**  
 Contains processed datasets generated from turbine matching procedures.
@@ -155,7 +155,7 @@ Contains processed datasets generated from turbine matching procedures.
 Contains implementations of main and benchmark methods.
 
 **results/final_results.csv**  
-Stores the aggregated results presented in the paper (Tables 1 and 2). Running each method updates the corresponding row in this file.
+Stores the aggregated results presented in the paper (Tables 1, 2, and 3). Running each method updates the corresponding row in this file.
 
 **results/intermediate/**  
 Contains intermediate outputs such as runtime logs and turbine-level prediction errors.
@@ -171,13 +171,17 @@ The process to reproduce the tables in the paper is straightforward. Follow the 
 3. Inside this folder, hold **Shift**, right-click, and select **Open PowerShell window here**.
 
 4. To reproduce **Table 1**, run the following command:
-.\run_table1.bat
+.\run_all_loto.bat
 
 5. To reproduce **Table 2**, run the following command:
-.\run_table2.bat
+.\run_all_dfp.bat
 
-6. After each method finishes running, the corresponding results will be written to results/final_results.csv.
+6. After each method finishes running, the corresponding results will be written to results/intermediate.
 
+7. Once you finished with computation, to get the summarized clean tables like the tables in the paper, run:
+   python compile_results.py
+   the tables will be stored in:
+   results/final_results.csv
 
 ## Runtime Summary for the Tables
 
