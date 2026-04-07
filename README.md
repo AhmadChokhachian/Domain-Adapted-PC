@@ -202,7 +202,7 @@ P_GNN | 1.5 hours
 P_XGBoost | 1 minute
 P_twinGP | 1 hour
 P_Binning | 1 minute
-**Total** | **~13 hours**
+**Total** | **~8 hours**
 
 ### Tables 3
 
@@ -223,7 +223,7 @@ P_Binning | 2 minutes
 
 ### Total Runtime
 
-The total runtime for reproducing **Tables 2** and **Tables 3** is approximately **13 and 71 hours**.
+The total runtime for reproducing **Tables 2** and **Tables 3** is approximately **8 and 71 hours**.
 
 If you only want to run a subset of the methods, you can comment out the corresponding method blocks in the files:
 
