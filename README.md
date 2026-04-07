@@ -185,34 +185,50 @@ The process to reproduce the tables in the paper is straightforward. Follow the 
 
 ## Runtime Summary for the Tables
 
-Matching (optional) takes 40 minutes. The runtime for **Table 1** is approximately **73 hours**.
+Matching (optional) takes 40 minutes. The runtime for **Table 1** is approximately **49 hours**.
 
 
 ### Tables 2
 
 Method | Runtime
 ------ | -------
-TF_thinned_SV | ?
-TF_thinned_twinGP | ?
-TF_ANN | ?
-G_SVR | ?
-G_XGBoost | ?
-G_random_forest | ?
-P_GNN | ?
-P_XGBoost | ?
-P_twinGP | ?
-P_Binning | ?
-**Total** | **~? hours**
+TF_thinned_SV | 3 hours
+TF_thinned_twinGP | already computed in Table 1
+TF_ANN | 1 hour
+G_SVR | 1 hour
+G_XGBoost | 1 minute
+G_random_forest | 4 minutes
+P_GNN | 1.5 hours
+P_XGBoost | 1 minute
+P_twinGP | 1 hour
+P_Binning | 1 minute
+**Total** | **~13 hours**
+
+### Tables 3
+
+Method | Runtime
+------ | -------
+TF_thinned_SV | 29 hours
+TF_thinned_twinGP | already computed in Table 1
+TF_ANN | 4 hours
+G_SVR | 14 hours
+G_XGBoost | 2 minutes
+G_random_forest | 15 minutes
+P_GNN | 19 hours
+P_XGBoost | 24 minutes
+P_twinGP | 5 hours
+P_Binning | 2 minutes
+**Total** | **~71 hours**
 
 
 ### Total Runtime
 
-The total runtime for reproducing **Tables 2** is approximately **? hours**.
+The total runtime for reproducing **Tables 2** and **Tables 3** is approximately **13 and 71 hours**.
 
 If you only want to run a subset of the methods, you can comment out the corresponding method blocks in the files:
 
-- `run_table1.bat`
-- `run_table2.bat`
+- `run_all_loto.bat`
+- `run_all_dfp.bat`
 
 
 ### Note on Runtime Performance
