@@ -185,7 +185,7 @@ The process to reproduce the tables in the paper is straightforward. Follow the 
 
 ## Runtime Summary for the Tables
 
-Matching (optional) takes 40 minutes. The runtime for **Table 1** is approximately **49 hours**.
+Matching takes 40 minutes. The runtime for **Table 1** is approximately **49 hours**.
 
 
 ### Tables 2
@@ -230,8 +230,11 @@ If you only want to run a subset of the methods, you can comment out the corresp
 - `run_all_loto.bat`
 - `run_all_dfp.bat`
 
+### Note 1 on Runtime Performance
 
-### Note on Runtime Performance
+All experiments are implemented and executed on the Georgia Tech Partnership for an Advanced Computing Environment (PACE) high-performance computing cluster. Jobs are submitted through the Inferno service using CPU-only Intel processor nodes, with each job allocated one node and eight cores. The Inferno partition provides access to shared research computing resources with standard SLURM-based job scheduling, enabling reproducible and parallelized execution of the computationally intensive model fitting and evaluation pipelines described in this work.
+
+### Note 2 on Runtime Performance
 
 We observed that the runtime of several methods is significantly faster when **OpenBLAS** is used for linear algebra operations.
 
